@@ -30,6 +30,27 @@ void launch(int number) {
     digitalWrite(cannon3, LOW);
     digitalWrite(light3, LOW);
     break;
+      case 4:
+    digitalWrite(cannon4, HIGH);
+    digitalWrite(light3, HIGH);
+    delay(50);
+    digitalWrite(cannon4, LOW);
+    digitalWrite(light3, LOW);
+    break;
+ case 5:
+    digitalWrite(cannon5, HIGH);
+    digitalWrite(light3, HIGH);
+    delay(50);
+    digitalWrite(cannon5, LOW);
+    digitalWrite(light3, LOW);
+    break;
+ case 6:
+    digitalWrite(cannon5, HIGH);
+    digitalWrite(light3, HIGH);
+    delay(50);
+    digitalWrite(cannon5, LOW);
+    digitalWrite(light3, LOW);
+    break;
   default:
     break;
   }  

@@ -51,7 +51,7 @@ String temp;
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(74880);
-  Serial1.begin(57600);
+  Serial.begin(57600);
   pinMode(cannon1, INPUT_PULLUP);
   pinMode(cannon2, INPUT_PULLUP);
   pinMode(cannon3, INPUT_PULLUP);
@@ -152,7 +152,7 @@ if (prevArm != armed) {
   launch = 0;
   message = message + lightSetting + "0>"; 
   //Serial.println(message); // For debugging
-  Serial1.println(message);
+  Serial.println(message);
   delay(10);
   
 }

@@ -9,19 +9,22 @@ Servo right_motor;
 Servo left_motor;
 
 // Constants -- pin locations
-const int red_pin = 5;
-const int green_pin = 11;
-const int blue_pin = 6;
-const int cannon1 = 4;
-const int cannon2 = 3;
-const int cannon3 = 2;
-const int light1 = 7;
-const int light2 = 8;
-const int light3 = 12;
+const int red_pin = 2;
+const int green_pin = 3;
+const int blue_pin = 4;
+const int cannon1 = 5;
+const int cannon2 = 6;
+const int cannon3 = 7;
+const int cannon4 = 8;
+const int cannon5 = 9;
+const int cannon6 = 10;
+const int light1 = 11;
+const int light2 = 12;
+const int light3 = 13;
 const int rightMotorPin = A0;
 const int leftMotorPin = A1;
-//const int tx = 1; //These connect to XBee. May currently be switched, also don't really matter if written in code
-//const int rx = 0;
+const int tx = 1; //These connect to XBee. May currently be switched, also don't really matter if written in code
+const int rx = 0;
 
 
 //Message variables
@@ -100,6 +103,9 @@ void setup() {
   pinMode(cannon1, OUTPUT);
   pinMode(cannon2, OUTPUT);
   pinMode(cannon3, OUTPUT);
+  pinMode(cannon4, OUTPUT);
+  pinMode(cannon5, OUTPUT);
+  pinMode(cannon6, OUTPUT);
   pinMode(light1, OUTPUT);
   pinMode(light2, OUTPUT);
   pinMode(light3, OUTPUT);
@@ -109,6 +115,9 @@ void setup() {
   digitalWrite(cannon1, LOW);
   digitalWrite(cannon2, LOW);
   digitalWrite(cannon3, LOW);
+  digitalWrite(cannon4, LOW);
+  digitalWrite(cannon5, LOW);
+  digitalWrite(cannon6, LOW);
   digitalWrite(light1, LOW);
   digitalWrite(light2, LOW);
   digitalWrite(light3, LOW);
